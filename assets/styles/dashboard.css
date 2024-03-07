@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Madimi One', sans-serif;
+}
+
+body {
+    display: 100vh;
+}
+.container {
+	margin-top: 110px;
+	padding: 5%;
+	margin-left: 5%;
+	margin-right: 5%;
+	text-align: center;
+    border-radius: 10px;
+	background-color: gainsboro;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 15px 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 100000;
+    transition: all 0.6s ease-in-out;
+    box-shadow: 0 2px 5px rgba(105, 105, 105, 0.8);
+}
+
+header nav ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li button{
+    position: relative;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: black;
+}
+
+header.sticky nav ul li button {
+    background-color: white;
+}
+
+header.sticky .rightItems{
+    color: white;
+}
+
+.rightItems {
+    margin-right: auto;
+}
+
+h4 {
+    margin-bottom: 8px;
+}
+
+.nav-items li {
+    display: inline-block;
+    padding: 0 2px;
+}
+
+nav-items li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav-items li a:hover {
+    color: white;
+}
+
+button {
+    border: none;
+    text-decoration: none;
+    color: black;
+    background-color: rgba(105, 105, 105, 0.2);
+    padding: 12px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: rgba(105, 105, 105, 0.5);
+    transform: scale(1.1);
+}
+
+button:active {
+    transform: scale(0.95);
+} 
+
+.breadcrumb {
+    display: flex;
+    background-color: gray;
+    border-radius: 8px;
+    padding: 10px;
+    
+}
+
+a {
+    padding-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    transition: all 0.3s ease;
+    color: white;
+}
+
+.content {
+    background: #eee;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+
+
+
+/*105,105,105,1
+112,128,144,1
+47,79,79,1
+0,0,0,0,1 */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>CatBook Sign In | Sign Up</title>
+    
+</head>
+<body>
+
+    <header>
+        <img src="assets/code.svg" alt="logo" class="icon">
+        <h1 class="head">
+            CatBook
+        </h1>
+        <button class="nav_button">Contact Us</button>
+    </header>
+
+    <div class="container">
+        
+        <div class="message-container" id="messageContainer"></div>
+
+        <div class="form-sign-in form-container">
+            <form action="send" method="post">
+                <div class="social-container">
+                    <a href="#" class="social"><img src="assets/google.svg" alt="google"></a>
+                    <a href="#" class="social"><img src="assets/facebook.svg" alt="facebook" ></a>
+                    <a href="#" class="social"><img src="assets/linkedin.svg" alt="linkedin"></a> 
+                </div>
+                <input type="email" name="email" placeholder="email">
+                <input type="password" name="password" placeholder="password">
+
+                <div class="button-container">
+                    <button class="buttonSign" id="buttonSignIn"><input type="submit"></button>
+                </div>
+
+                <div class="ancorLinks">
+                    <a href="#">Forgot password?</a>
+                <a href="#" id="buttonSignUp">Create account</a>
+                </div>
+                
+                
+            </form>
+        </div>
+
+        <div class="form-sign-up form-container">
+            <p id="error"></p>
+            <form action="send" method="post">
+            <input type="text" name="userName" placeholder="name" id="userName" required>
+            <input type="text" name="userLastName" placeholder="last Name" id="userLastName" required>
+            <input type="email" name="email" placeholder="email" id="email" required>
+            <input type="password" name="password" placeholder="password" id="password" required>
+            <input type="password" name="confirmPass" placeholder="confirm password" id="passConfirm" required>
+            <a href="#" class="sign-in-link">Got an account already?</a>
+            <button class="sign"><input type="submit">Submit</button>
+            </form>
+    </div>
+    </div>
+
+
+    <script src="assets/scripts/main.js"></script>
+</body>
+</html>
